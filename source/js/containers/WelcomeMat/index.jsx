@@ -26,7 +26,7 @@ class WelcomeMat extends Component {
                     <h1 className="left_item" id="greet">hi, i'm <span id="name">Dave</span></h1>
 
                     <div id="occupation" className="left_item" >
-                        <div id="occ"><p className="occupation_detail">two parts father,</p><p className="occupation_detail">one part engineer</p></div>
+                        <div id="occ"><p className="occupation_detail">two parts father</p><p className="occupation_detail">one part engineer</p></div>
                         <div id="chart">
                             <PieChart width={800} height={400} onMouseEnter={() => this.showOccupation()}>
                                 <Pie

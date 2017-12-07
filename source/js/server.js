@@ -12,7 +12,6 @@ import getServerHtml from './config/server-html';
 import App from './containers/App';
 
 import { socketIO_setup } from './containers/Contact/emailSocket'
-import { menuSocket } from './containers/Restaurant/menuSocket'
 
 // Load SCSS
 import '../scss/app.scss';
@@ -64,4 +63,3 @@ app.listen(port, (error) => {
 
 // contact form
 socketIO_setup(app)
-menuSocket(app)
