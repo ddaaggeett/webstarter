@@ -7,7 +7,7 @@ var audioStyle = require('./audioplayer.scss')
 
 const playlist = [
     {
-        url: './source/assets/audio/tune.wav',
+        url: './src/assets/audio/tune.wav',
         displayText: 'dude, you need to tune',
     },
 ]
