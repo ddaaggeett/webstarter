@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 
-import Webstarter from './Webstarter'
+import Main from './Main'
 
 export default class App extends Component {
   render() {
     return (
         <div className='App'>
-            <Route exact path="/" component={Webstarter}/>
+            <Route exact path="/" component={Main}/>
         </div>
     );
   }

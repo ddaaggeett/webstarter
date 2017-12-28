@@ -1,12 +1,22 @@
-const initialState = {}
+const initialState = {
+	count: 0,
+}
 
 export default function restaurant(state = initialState, action) {
 	switch(action.type) {
 
-		case 'SOME_ACTION':
+		case 'COUNT_UP':
 
 			return {
-				...state
+				...state,
+				count: state.count + 1
+			}
+
+		case 'COUNT_DOWN':
+
+			return {
+				...state,
+				count: state.count - 1
 			}
 
 		default:
