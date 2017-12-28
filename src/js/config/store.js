@@ -1,3 +1,4 @@
+import { persistStore } from 'redux-persist'
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'dev/logger';
@@ -23,13 +24,15 @@ let INIT_STATE = null;
 try {
   INIT_STATE = __DEHYDRATED_STATE; // eslint-disable-line no-undef
 } catch (e) {
-  console.log('Mavin: No dehydrated state'); // eslint-disable-line no-console
+  console.log('No dehydrated state'); // eslint-disable-line no-console
 }
 
 // Remove if you are not using server rendering
 if (INIT_STATE) {
   INIT_STATE = transit.fromJSON(INIT_STATE);
 }
+
+var persistor = null;
 
 // Creating store
 export default () => {
@@ -68,6 +71,8 @@ export default () => {
     );
   }
 
+  persistor = persistStore(store)
+
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
     module.hot.accept('../reducers', () => {
@@ -78,3 +83,5 @@ export default () => {
 
   return store;
 };
+
+export { persistor }

@@ -7,8 +7,7 @@ class Main extends Component {
 
         return (
             <div className='body'>
-                <div className="vertical_content">modern web developement starter point</div>
-
+                <h2 className="vertical_content">modern web developement starter point</h2>
 
                 <div className="vertical_content">
                     <div className="interactives">
@@ -17,7 +16,8 @@ class Main extends Component {
                     </div>
 
                     <div className="interactives">
-                        <p id="count">{this.props.main.count}</p>
+                        <p className="interactives_right" id="count">{this.props.main.count}</p>
+                        <p className="interactives_right">count will be saved for your next page visit</p>
                     </div>
                 </div>
             </div>

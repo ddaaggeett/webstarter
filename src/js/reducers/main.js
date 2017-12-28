@@ -2,7 +2,7 @@ const initialState = {
 	count: 0,
 }
 
-export default function restaurant(state = initialState, action) {
+export default function main(state = initialState, action) {
 	switch(action.type) {
 
 		case 'COUNT_UP':

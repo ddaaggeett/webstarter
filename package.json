@@ -63,6 +63,7 @@
     "immutable": "^3.8.1",
     "ip": "^1.1.5",
     "isomorphic-fetch": "^2.2.1",
+    "localforage": "^1.5.5",
     "node-sass": "^4.5.3",
     "nodemailer": "^4.2.0",
     "nodemon": "^1.11.0",
