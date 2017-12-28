@@ -6,13 +6,9 @@ _nogit
 todo.md
 build
 example_aws
-audio
 *.zip
 *awsConfig*
 *emailConfig*
-
-SmallHeader
-Video
 
 .ebextensions
 .elasticbeanstalk
@@ -23,3 +19,4 @@ keys
 source_client_00000
 
 blooprint
+Contact

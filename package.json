@@ -12,7 +12,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "client:dev": "webpack-dashboard -t 'Marvin' -- webpack-dev-server",
+    "client:dev": "webpack-dashboard -t 'webstarter' -- webpack-dev-server",
     "client:watch": "webpack",
     "client:build": "npm run clean && NODE_ENV=\"production\" webpack",
     "client:preview": "npm run clean && NODE_ENV=\"production\" webpack-dev-server",
@@ -80,6 +80,7 @@
     "recharts": "^1.0.0-apha.5",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.6",
+    "redux-persist": "^5.4.0",
     "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.6",
     "socket.io": "^2.0.3",
