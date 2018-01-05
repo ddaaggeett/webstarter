@@ -15,4 +15,4 @@
 
 then visit [http://127.0.0.1:8081](http://127.0.0.1:8081)
 
-if server side (`npm run universal:dev`) development is unnecessary, then run `npm start` instead for front end dev only. then visit [http://0.0.0.0:3000](http://0.0.0.0:3000)
+if server side (`npm run universal:dev`) development is unnecessary, then run `npm start` instead for front end dev only.

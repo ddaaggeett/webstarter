@@ -4,9 +4,8 @@ import { AppContainer } from 'react-hot-loader';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import 'babel-polyfill';
-import { PersistGate } from 'redux-persist/es/integration/react'
 
-import configureStore, { persistor } from './config/store';
+import configureStore from './config/store';
 
 import App from './containers';
 
@@ -25,11 +24,9 @@ const render = Component => {
     ReactDOM.render(
         <AppContainer>
             <Provider store={ store }>
-                <PersistGate persistor={ persistor }>
-                    <BrowserRouter>
-                        <Component />
-                    </BrowserRouter>
-                </PersistGate>
+                <BrowserRouter>
+                    <Component />
+                </BrowserRouter>
             </Provider>
         </AppContainer>,
         document.getElementById('root')

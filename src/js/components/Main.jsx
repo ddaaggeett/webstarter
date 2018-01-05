@@ -17,7 +17,6 @@ class Main extends Component {
 
                     <div className="interactives">
                         <p className="interactives_right" id="count">{this.props.main.count}</p>
-                        <p className="interactives_right">count will be saved for your next page visit</p>
                     </div>
                 </div>
             </div>

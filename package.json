@@ -1,10 +1,10 @@
 {
-  "name": "ddaaggeett",
+  "name": "webstarter",
   "author": "Dave Daggett (david.g.daggett@gmail) <https://github.com/ddaaggeett>",
-  "description": "website",
-  "homepage": "https://github.com/ddaaggeett/ddaaggeett#readme",
+  "description": "server side rendering node.js boilerblate",
+  "homepage": "https://github.com/ddaaggeett/webstarter#readme",
   "bugs": {
-    "url": "https://github.com/ddaaggeett/ddaaggeett/issues"
+    "url": "https://github.com/ddaaggeett/webstarter/issues"
   },
   "version": "0.0.1",
   "private": "false",
@@ -32,7 +32,6 @@
   "devDependencies": {},
   "dependencies": {
     "autoprefixer": "^7.1.2",
-    "aws-sdk": "^2.137.0",
     "babel-core": "^6.7.2",
     "babel-eslint": "^8.0.0",
     "babel-loader": "^7.1.1",
@@ -58,14 +57,11 @@
     "express": "^4.15.3",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.5",
-    "google-spreadsheet-to-json": "^1.0.0",
     "html-webpack-plugin": "^2.24.1",
     "immutable": "^3.8.1",
     "ip": "^1.1.5",
     "isomorphic-fetch": "^2.2.1",
-    "localforage": "^1.5.5",
     "node-sass": "^4.5.3",
-    "nodemailer": "^4.2.0",
     "nodemon": "^1.11.0",
     "postcss-loader": "^2.0.6",
     "prepush": "^3.1.11",
@@ -91,8 +87,7 @@
     "transit-js": "^0.8.846",
     "webpack": "^3.4.1",
     "webpack-dashboard": "^1.0.0-5",
-    "webpack-dev-server": "^2.6.1",
-    "xoauth2": "^1.2.0"
+    "webpack-dev-server": "^2.6.1"
   },
   "repository": {
     "type": "git"
