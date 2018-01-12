@@ -11,8 +11,6 @@ import configureStore from './config/store';
 import getServerHtml from './config/server-html';
 import App from './containers';
 
-import { socketIO_setup } from './containers/Contact/emailSocket'
-
 // Load SCSS
 import '../scss/app.scss';
 
@@ -60,6 +58,3 @@ app.listen(port, (error) => {
     console.info(`\n★★ Listening on port ${ port }. Open up http://${ hostname }:${ port }/ in your browser.\n`); // eslint-disable-line
   }
 });
-
-// contact form
-socketIO_setup(app)
