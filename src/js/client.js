@@ -10,7 +10,6 @@ import configureStore from './config/store';
 import App from './containers';
 
 import es6Promise from 'es6-promise';
-import 'isomorphic-fetch';
 
 // Load SCSS
 import '../scss/app.scss';
